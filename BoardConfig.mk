@@ -5,6 +5,7 @@
 #
 
 DEVICE_PATH := device/motorola/vicky
+KERNEL_PATH := device/motorola/vicky-kernel
 
 # Architecture
 TARGET_ARCH := arm64
@@ -54,6 +55,17 @@ TARGET_NO_BOOTLOADER := true
 
 # Plaform
 TARGET_BOARD_PLATFORM := mt6789 
+
+# Kernel
+TARGET_NO_KERNEL_OVERRIDE := true
+
+LOCAL_KERNEL := $(KERNEL_PATH)/Image.gz
+PRODUCT_COPY_FILES += \
+        $(LOCAL_KERNEL):kernel
+
+# DTB
+BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
+BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb
 
 # Inherit the proprietary files
 include vendor/motorola/vicky/BoardConfigVendor.mk
