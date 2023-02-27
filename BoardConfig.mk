@@ -55,6 +55,9 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # VNDK
 BOARD_VNDK_VERSION := current
 
+# Vendor Security Patch
+VENDOR_SECURITY_PATCH := 2023-10-05
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
