@@ -13,7 +13,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
 # Enforce generic ramdisk allow list
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
-
 # A/B
 PRODUCT_PACKAGES += \
     update_engine \
@@ -38,6 +37,9 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
+
+# AAPT
+PRODUCT_CHARACTERISTICS := phone
 
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
