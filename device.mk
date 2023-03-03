@@ -258,6 +258,9 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
     libsensorndkbridge
 
+# Include GSI keys
+$(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
 
