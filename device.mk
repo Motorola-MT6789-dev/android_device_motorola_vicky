@@ -36,8 +36,12 @@ PRODUCT_PACKAGES += \
     init.sensor_2_0.rc \
     ueventd.mtk.rc
 
+<<<<<<< HEAD
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/modules/init.insmod.mt6789.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.mt6789.cfg
+
+# Dalvik configs
+$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Permissions
 PRODUCT_COPY_FILES += \
