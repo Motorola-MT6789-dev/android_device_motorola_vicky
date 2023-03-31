@@ -16,6 +16,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Allow userspace reboots
+$(call inherit-product, $(SRC_TARGET_DIR)/product/userspace_reboot.mk)
+
 # A/B
 PRODUCT_PACKAGES += \
     update_engine \
