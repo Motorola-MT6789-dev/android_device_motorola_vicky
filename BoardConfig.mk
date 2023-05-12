@@ -98,5 +98,8 @@ VENDOR_SECURITY_PATCH := 2023-10-05
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
+# Workaround to make lineage's soong generator work
+TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
+
 # Inherit the proprietary files
 include vendor/motorola/vicky/BoardConfigVendor.mk
