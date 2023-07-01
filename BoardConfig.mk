@@ -71,5 +71,8 @@ BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
+# VNDK
+BOARD_VNDK_VERSION := current
+
 # Inherit the proprietary files
 include vendor/motorola/vicky/BoardConfigVendor.mk
