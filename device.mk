@@ -124,6 +124,7 @@ PRODUCT_PACKAGES += \
     libhwc2on1adapter \
     libhwc2onfbadapter.vendor \
     libdrm.vendor \
+    libutils-v32 \
     libdrm \
     disable_configstore
 
