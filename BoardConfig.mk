@@ -6,6 +6,7 @@
 
 DEVICE_PATH := device/motorola/vicky
 KERNEL_PATH := $(DEVICE_PATH)-kernel
+VINTF_PATH := $(DEVICE_PATH)/vintf
 
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
@@ -94,6 +95,11 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # VNDK
 BOARD_VNDK_VERSION := current
+
+# VINTF
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(VINTF_PATH)/framework_compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(VINTF_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(VINTF_PATH)/compatibility_matrix.xml
 
 # Selinux
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
