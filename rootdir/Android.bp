@@ -92,3 +92,4 @@ prebuilt_etc {
     filename: "ueventd.rc",
     src: "etc/ueventd.mtk.rc",
     vendor: true,
+}
