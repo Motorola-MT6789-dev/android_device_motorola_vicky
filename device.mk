@@ -56,7 +56,7 @@ PRODUCT_PACKAGES += \
     init_connectivity.rc \
     ueventd.mt6789.rc \
     fstab.mt6789 \
-    fstab.mt6789_vendor_ramdisk
+    fstab.mt6789.vendor_ramdisk
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
