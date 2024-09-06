@@ -10,6 +10,16 @@ KERNEL_PATH := device/motorola/vicky-kernel
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
+AB_OTA_PARTITIONS := \
+    boot \
+    dtbo \
+    system \
+    product \
+    vendor \
+    vbmeta \
+    vbmeta_system \
+    vendor_boot
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod
@@ -59,7 +69,6 @@ TARGET_NO_BOOTLOADER := true
 
 # Plaform
 TARGET_BOARD_PLATFORM := mt6789 
-
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
