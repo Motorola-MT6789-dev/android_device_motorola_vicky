@@ -2,7 +2,6 @@
 
 on post-fs-data
 
-
 #
 # Connectivity related device nodes & configuration (begin)
 #
