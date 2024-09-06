@@ -43,6 +43,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Init files
 PRODUCT_PACKAGES += \
+    init.insmod.sh \
+    init.insmod.mt6789.cfg \
+    init.cgroup.rc \
+    init.connectivity.common.rc \
+    init.connectivity.rc \
+    init.mt6789.rc \
+    init.mt6789.usb.rc \
+    init.mtkgki.rc \
+    init.project.rc \
+    init.sensor_2_0.rc \
+    init_connectivity.rc \
+    ueventd.mt6789.rc \
+    fstab.mt6789 \
     fstab.mt6789_vendor_ramdisk
 
 # Overlays
