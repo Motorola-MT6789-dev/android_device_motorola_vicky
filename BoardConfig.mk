@@ -13,8 +13,8 @@ DEXPREOPT_GENERATE_APEX_IMAGE := true
 AB_OTA_PARTITIONS := \
     boot \
     dtbo \
-    system \
     product \
+    system \
     vendor \
     vbmeta \
     vbmeta_system \
@@ -85,7 +85,7 @@ BOARD_USES_VENDOR_DLKMIMAGE := true
 
 # Partitions (Dynamic)
 BOARD_SUPER_PARTITION_GROUPS := mediatek_dynamic_partitions
-BOARD_MEDIATEK_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor product system_ext vendor_dlkm
+BOARD_MEDIATEK_DYNAMIC_PARTITIONS_PARTITION_LIST := product system system_ext vendor vendor_dlkm
 BOARD_MEDIATEK_DYNAMIC_PARTITIONS_SIZE := 7511998464 # BOARD_SUPER_PARTITION_SIZE - 4MB
 
 ifneq ($(WITH_GMS),true)
@@ -100,7 +100,7 @@ BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := erofs
 endif
 
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := erofs
-BOARD_VENDOR_DLKMIMAGE_FILE_SYSTEM_TYPE := erofs
+BOARD_VENDOR_DLKMIMAGE_FILE_SYSTEM_TYPE := ext4
 
 TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_VENDOR := vendor
