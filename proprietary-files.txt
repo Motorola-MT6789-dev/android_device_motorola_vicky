@@ -1,0 +1,9 @@
+# Unpinned blobs from vicky_g_sys-user 13 T2SVS33M.68-21-8-6 dbe37 release-keys
+
+# AEE
+-vendor/lib/libaedv.so
+-vendor/lib/libladder.so
+-vendor/lib/libudf.so
+-vendor/lib64/libaedv.so
+-vendor/lib64/libladder.so
+-vendor/lib64/libudf.so
