@@ -83,6 +83,12 @@ PRODUCT_PACKAGES += \
     libaudiofoundation.vendor \
     libtinycompress
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio-impl \
+    libbluetooth_audio_session \
+    android.hardware.bluetooth@1.1.vendor
+
 # Boot control HAL
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-service \
